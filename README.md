@@ -21,6 +21,7 @@ Created by Sean Black, Laine Woods, and Andrew Pacheco
     - 3.1 Matlab
     - 3.2 Simulink
  - [4 Implementation](#4-Implementation)
+ - [5 References](#5-References)
  
 -------------------------------------------------------------
 ## 1 Introduction
@@ -48,3 +49,17 @@ By analyzing the figure above, the basic operation of the pendulum is controlled
 
 ### 2.2 Parameters
 
+--------------------------------------------------------------------------------
+## 3 Simulation
+
+### 3.1 Matlab
+
+### 3.2 Simulink
+
+--------------------------------------------------------------------------------
+## 4 Implementation
+
+--------------------------------------------------------------------------------
+## 5 References
+
+---------------------------------------------------------------------------------
