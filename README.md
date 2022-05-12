@@ -2,7 +2,7 @@
 
 A collaborative project report for CSU: Chico MECA 482 (Control Systems)
 
-Created by Sean Black, Laine Woods, and Andrew Pacheco
+Created by Sean Black, Laine Wood, and Andrew Pacheco
 
 --------------------------------------------------------
 ## Table of Contents
