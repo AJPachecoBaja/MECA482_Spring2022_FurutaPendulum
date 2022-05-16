@@ -54,7 +54,7 @@ Our team followed the provided workbook Rotary Pendulum (ROTPEN) published by Qu
   <img 
     width="500"
     height="500"
-    src="https://user-images.githubusercontent.com/104785921/168168774-9863f341-fba4-493f-b050-29c298c18598.png"
+    src="https://user-images.githubusercontent.com/103708956/168511751-b11f5390-5207-4fea-b512-11c63e4dbe67.png"
   >
 </p>
 
@@ -108,3 +108,4 @@ By analyzing the figure above, the basic operation of the pendulum is controlled
 ## 5 References
 
 ---------------------------------------------------------------------------------
+
