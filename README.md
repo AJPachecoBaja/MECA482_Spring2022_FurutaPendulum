@@ -93,7 +93,111 @@ By analyzing the figure above, the basic operation of the pendulum is controlled
 |           ----             |  Dr = 1            |        ----      | 
 | Motor Armature Resistance  |   Dp1 = 1          |        ----      |
 
+### 2.3 Motion Eqautions
 
+This section is to establish a mathmatical connection between all parameters and actual motion code used to control the Furuta Pendulum Simulink and CoppeliaSim models. We shall cover the derivations of motion for the pendulum and rotary arms. The following equations were provided by Quanser workbook and have been tweaked slightly to create working matlab code. Brief descriptions of the equations will be stated above the equation image.
+
+Eq. 1 : Euler-Lagrange Equation
+   
+   <p align="center">
+  <img
+       width=660
+       height=116
+       src="https://user-images.githubusercontent.com/104785921/168964314-175fbad0-ff7d-46d0-af66-45df029143f6.png"
+  >
+</p>
+
+Eq. 2 : Generalized Polar Coordinates
+
+<p align="center">
+  <img
+       width=660
+       height=116
+       src="https://user-images.githubusercontent.com/104785921/168964761-589147dd-5a80-4de6-97bf-51672c79d8f7.png"
+  >
+</p>
+
+Eq. 3 : Generalized Force on Arm (Theta)
+
+<p align="center">
+  <img
+       width=660
+       height=116
+       src="https://user-images.githubusercontent.com/104785921/168965306-bfeddff3-4d13-479d-a498-b0246f08375d.png"
+  >
+</p>
+
+Eq. 4 : Generalized Force on Pendulum (Alpha) 
+
+<p align="center">
+  <img
+       width=660
+       height=116
+       src="https://user-images.githubusercontent.com/104785921/168965471-db2f72a8-63d7-464a-8f63-7ed810c8e94b.png"
+  >
+</p>
+
+Eq. 5 & 6 : Non-conservative forces acting on arm and pendulum respectively
+
+<p align="center">
+  <img
+       width=660
+       height=232
+       src="https://user-images.githubusercontent.com/104785921/168965840-ebca4c93-d595-4ecc-a6fc-3b5356b4e0da.png"
+  >
+</p>
+
+Eq. 7 : Equation of Motion (Theta) for rotary Arm
+
+<p align="center">
+  <img
+       width=720
+       height=232
+       src="https://user-images.githubusercontent.com/104785921/168976456-7059417a-9641-4c54-9a25-77985ec5160a.png"
+  >
+</p>
+
+Eq. 8 : Equation of Motion (Alpha) for rotary Pendulum
+
+<p align="center">
+  <img
+       width=720
+       height=232
+       src="https://user-images.githubusercontent.com/104785921/168976702-fa84a9e1-d24e-4221-9ac1-2fbf34994877.png"
+  >
+</p>
+
+Eq. 9 : Torque Equation
+
+<p align="center">
+  <img
+       width=680
+       height=116
+       src="https://user-images.githubusercontent.com/104785921/168977004-829036e9-9813-4861-88d3-e55ed5525fe6.png"
+  >
+</p>
+
+Eq. 10 : Typical format of a Equation of Motion
+
+<p align="center">
+  <img
+       width=640
+       height=116
+       src="https://user-images.githubusercontent.com/104785921/168980696-282e93e6-3ea2-45bd-9e22-348609c08e4c.png"
+  >
+</p>
+
+Eq. 11 : Generalized Eq. 10 to work with vector q
+
+<p align="center">
+  <img
+       width=680
+       height=116
+       src="https://user-images.githubusercontent.com/104785921/168981026-c7918b93-5a7b-4ada-ad07-5e08a826b287.png"
+  >
+</p>
+
+Eq. 12 : 
 --------------------------------------------------------------------------------
 ## 3 Simulation
 
