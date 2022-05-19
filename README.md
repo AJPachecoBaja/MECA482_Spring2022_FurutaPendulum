@@ -103,7 +103,7 @@ Eq. 1 : Euler-Lagrange Equation
    
    <p align="center">
   <img
-       width=660
+       width=400
        height=116
        src="https://user-images.githubusercontent.com/104785921/168964314-175fbad0-ff7d-46d0-af66-45df029143f6.png"
   >
