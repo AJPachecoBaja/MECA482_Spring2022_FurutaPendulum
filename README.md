@@ -478,7 +478,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
 
 ### 3.2 Simulink
 
-   The Simulink program is a platform to create Model-Based, systen level design structures. With this we are able to simulate the Matlab code and verify our systems input/output values with auto generated graphs. using a block diagram format the Simulink program is easy to understand and follow, our raw simulink file can be found at [s_rotpen_bal](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/s_rotpen_bal.slx). Shown below is our final Simulink model diagram.
+   The Simulink program is a platform to create Model-Based, systen level design structures. With this we are able to simulate the Matlab code and verify our systems input/output values with auto generated graphs. Using a block diagram format the Simulink program is easy to understand and follow, our raw simulink file can be found at [s_rotpen_bal](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/s_rotpen_bal.slx). Shown below is our final Simulink model diagram.
    
    <p align="center">
   <img
