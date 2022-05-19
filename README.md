@@ -99,7 +99,7 @@ To begin this project the group created operational and functional viewpoint dia
 | N =  |    Newton                    |
 | A =  |     Area                     |
 | Ω =  |    Ohm                       |
-| V =  |    Volt = [(kg*m^2)/(A*s^3)] |
+| V =  |    Volt                     |
 
 
 |       Parameter            |       Symbol       |      Units       |
