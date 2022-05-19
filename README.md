@@ -476,6 +476,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
 
 ### 3.2 Simulink
 
+The Simulink program is a platform to create Model-Based design, 
 --------------------------------------------------------------------------------
 ## 4 Implementation
 
