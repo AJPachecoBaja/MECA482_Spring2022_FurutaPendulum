@@ -249,7 +249,7 @@ Eq. 12 :
 
 
 ### 3.1 Matlab
-<font size= "5"> <hx> <b> Creating a System Matrix </b> </hx> </font> 
+#### Creating a System Matrix
 
 A = [0 0 1 0; 
     0 0 0 1; 
