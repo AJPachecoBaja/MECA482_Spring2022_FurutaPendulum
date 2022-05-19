@@ -90,15 +90,15 @@ By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pend
 | Total Gear Ratio           | Kg = 0.9           |        ----      |
 | Motor Torque Constant      | kt = 0.00768       |   (N.m)/A        |
 | Motor back-EMF constant    | km = 0.03          |    (V.s)/rad     |
-| Motor armature resistance | Rm =  2.6             |   (ohm)          |
-| Mass of Rotary Arm        |  Mr = 0.250             | (kg)            |
-|           ----             |  Dr = 1            |        ----      | 
-|                 ----            |   Dp = 1          |        ----      |
-| Distance from pivot to center of gravity | lp1 =   | (m) |
-| Gearbox Efficiency | eta_g =  0.85 |  ----  | 
-| Motor Efficiency |  eta_m =  0.87  | ----   |
-| Rotation of the motor  | tau_1 = 0 |  |
-| Rotation of the motor | tau_2 = 0 |   |
+| Motor armature resistance  | Rm =  2.6           |   (ohm)          |
+| Mass of Rotary Arm         |  Mr = 0.250         | (kg)            |
+|           ----             |  Dr = 1              |        ----      | 
+|                 ----       |   Dp = 1             |        ----      |
+| Distance from pivot to center of gravity          | lp1 =   | (m) |
+| Gearbox Efficiency        | eta_g =  0.85         |  (η)_g  | 
+| Motor Efficiency          |  eta_m =  0.87        | (η)_m   |
+| Rotation of the motor     | tau_1 = 0             | (τ)1_1 |
+| Rotation of the motor      | tau_2 = 0             | (τ)_2  |
 |  | Bp = 0 |   |
 |   | Br = 0 |   |
 | Potential Energy | 
