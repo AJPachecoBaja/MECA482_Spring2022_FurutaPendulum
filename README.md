@@ -95,8 +95,14 @@ By analyzing the figure above, the basic operation of the pendulum is controlled
 |           ----             |  Dr = 1            |        ----      | 
 |                 ----            |   Dp = 1          |        ----      |
 | Distance from pivot to center of gravity | lp1 =   | (m) |
-| Gearbox Efficiency | eta_g =   |  ----  | 
-| Motor Efficiency |  eta_m =    | ----   |
+| Gearbox Efficiency | eta_g =  0.85 |  ----  | 
+| Motor Efficiency |  eta_m =  0.87  | ----   |
+| Rotation of the motor  | tau_1 = 0 |  |
+| Rotation of the motor | tau_2 = 0 |   |
+|  | Bp = 0 |   |
+|   | Br = 0 |   |
+| Potential Energy | 
+
 
 
 
