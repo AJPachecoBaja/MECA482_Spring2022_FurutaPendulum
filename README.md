@@ -44,12 +44,12 @@ Figure 1. Photo of a Furuta Pendulum.
 This document summarizes the basic control theory, programming, and calculations necessary to create a working CoppeliaSim model with supporting state-space representation, equations of motion, and control code via Mathworks’ MATLAB and Simulink programs.
 
 ----------------------------------------------------------------------------
-## 2 MODELING
+## 2 Determining a Physical System
 
 ### 2.1 Sketch
 
 Our team 
-            it depicts the rotarty pendulum in a freebody diagram.
+            it depicts the rotary pendulum in a freebody diagram.
 
 <p align="center">
   <img 
@@ -64,6 +64,10 @@ Figure 2. Free Body Diagram of Rotary Pendulum.
     </p>
 
 By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pendulum is controlled by two angles between the base-to-Rotary arm (Θ) and Rotary arm-to-Pendulum (α). The goal is to create script such that the two angles reach equilibrium and maintain a balanced pendulum in the upright position. Counterclockwise (CC) motion is depicted as a positve change in angle (Θ) for the system, with this sign convention, voltage was applied to the motor. This resulted in a positive voltage equaling a positive angle.
+
+
+************ALSO ENTER OPERTATIONAL VIEW POINT AND FUNTIONAL DIAGRAM HERE**************
+
 
 ### 2.2 Parameters
 
@@ -97,7 +101,7 @@ By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pend
 | Distance from pivot to center of gravity          | lp1 =   | (m) |
 | Gearbox Efficiency        | eta_g =  0.85         |  (η)_g  | 
 | Motor Efficiency          |  eta_m =  0.87        | (η)_m   |
-| Rotation of the motor     | tau_1 = 0             | (τ)1_1 |
+| Rotation of the motor     | tau_1 = 0             | (τ)_1 |
 | Rotation of the motor      | tau_2 = 0             | (τ)_2  |
 |  | Bp = 0 |   |
 |   | Br = 0 |   |
@@ -109,9 +113,9 @@ By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pend
 
 
 
-### 2.3 Motion Eqautions
+### 2.3 Motion Equations
 
-This section is to establish a mathmatical connection between all parameters and actual motion code used to control the Furuta Pendulum Simulink and CoppeliaSim models. We shall cover the derivations of motion for the pendulum and rotary arms. The following equations are used to create a working matlab environmental architecture. Brief descriptions of the equations are provided, preceding each respective image.
+This section is to establish a mathematical connection between all parameters and actual motion code used to control the Furuta Pendulum Simulink and CoppeliaSim models. We shall cover the derivations of motion for the pendulum and rotary arms. The following equations are used to create a working MATLAB environmental architecture. Brief descriptions of the equations are provided, preceding each respective image.
 
 
    
@@ -230,11 +234,98 @@ This section is to establish a mathmatical connection between all parameters and
 </p>
 
 Eq. 12 : 
+<hx> Identifying Relationships of Parameters in the System </hx>
+<p align="center">
+    Eq. 12 : Total Polar Moment of Inertia, Jp (<i>q</i>)
+    Jt = Jr*Jp + Mp*(Lp/2)^2*Jr + Jp*Mp*Lr^2;
+    </p>
+<p align="center">
+    Eq. 13 : Potential Energy of the System, Ep (<i>q</i>)
+    Ep = Mp * g * Lp
+    </p>
 --------------------------------------------------------------------------------
 ## 3 Simulation
 
-### 3.1 Matlab
 
+
+### 3.1 Matlab
+<hx> <b> Creating a System Matrix </b> </hx>
+
+A = [0 0 1 0; 
+    0 0 0 1; 
+    0 Lp^2 * Lr * g * Mp^2 / (4 * Jp * Lr ^ 2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) -(Lp^2 * eta_g * eta_m * Kg^2 * km * kt * Mp + 4 * Jp * eta_g * eta_m * Kg^2 * km * kt + Br * Lp^2 * Mp * Rm + 4 * Br * Jp * Rm) / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) -2 * Bp * Lp * Lr * Mp / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr); 
+     0 -2 / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * (-Lp * Lr^2 * g * Mp^2 * Rm - Jr * Lp * g * Mp * Rm) -2 / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * (Lp * Lr * eta_g * eta_m * Kg^2 * km * kt * Mp + Br * Lp * Lr * Mp * Rm) -2 / Rm / (4 * Jp * Lr ^ 2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * (2 * Bp * Lr^2 * Mp * Rm + 2 * Bp * Jr * Rm);];
+     
+B = [0; 0; -(-Lp^2 * eta_g * eta_m * Kg * kt * Mp - 4 * Jp * eta_g * eta_m * Kg * kt) / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr); 2 / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * Lp * Lr * eta_g * eta_m * Kg * kt * Mp;];
+
+C = [1 0 0 0];
+
+D = 0;
+
+<hx> <b> Creating and Modeling the Steady State Transfer function for the System </b> </hx>
+
+[num,den]=ss2tf(A,B,C,D);
+
+    TF = tf(num, den);
+    
+    disp("Transfer Function Furuta Pendulum");
+    
+    TF
+    
+    disp("Zeros");
+    
+    disp(roots(num));
+    
+    disp("Poles");
+    
+    disp(roots(den));
+    
+    figure(134);
+
+<hx> <b> Modeling the System Response </b> </hx>
+
+sys_ss = ss(A,B,C,D);
+
+t = 0:0.1:10;
+
+u = ones(size(t,2),1);
+
+u=sin(t);
+
+x0 = [ 0 0 0 0];
+
+X0_pendulum = [0 270 0 0];
+
+[Y, T, X] = lsim(sys_ss,u,t)
+
+Plotting the intial results:
+figure; hold on;
+
+plot(t,u,'r')                       % Reference Signal
+
+%plot(t,Y,'m-.','linewidth',2);      % Systemn Response
+
+axis([-1.5 t(end) -.5 1.5]);
+
+legend('reference','response');
+
+<hx> <b> Consideration of Actuator Dynamics </b> </hx>
+
+B = Kg * kt * B / Rm;
+
+A(3,3) = A(3,3) - Kg^2*kt*km/Rm*B(3);
+
+A(4,3) = A(4,4) - Kg^2*kt*km/Rm*B(4);
+
+states(:) = {'theta' 'theta_dot' ' alpha' 'alpha_dot'};
+
+States = reshape(states,[4,1])
+
+inputs = {'u'};
+
+outputs = {'theta';'alpha'};
+
+<hx> <b> Consideration of Actuator Dynamics </b> </hx>
 
 
 ### 3.2 Simulink
