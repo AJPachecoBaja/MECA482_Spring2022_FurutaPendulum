@@ -29,34 +29,6 @@ A rotary (<i>inverted</i>) pendulum, also known as a Furuta Pendulum, is a non-l
 
 
 
-
-<font size="7"> Creating a System Matrix </font>
-
-<br>
-<b><font size="2"> Creating a System Matrix </font>
-    </b>
-<br>
-<font size="3"><b> Creating a System Matrix </b></font>
-<br>
-<font size="4"><b> Creating a System Matrix </b></font>
-<br>
-<font size="5"> Creating a System Matrix </font>
-<br>
-<font size="6"> Creating a System Matrix </font>
-<br>
-<font size="7"> Creating a System Matrix </font>
-
-
-
-
-
-
-
-
-
-
-
-
 <p align="center">
   <img 
     width="380"
@@ -279,6 +251,12 @@ Eq. 12 :
 
  ###3.1 Matlab
  
+ @settings {
+  font-size: 100;
+  Creating a System Matrix
+}
+ 
+ 
 <font size="7"> Creating a System Matrix </font>
 
 <br>
@@ -294,6 +272,7 @@ Eq. 12 :
 <font size="6"> Creating a System Matrix </font>
 <br>
 <font size="7"> Creating a System Matrix </font>
+
 
 A = [0 0 1 0; 
     0 0 0 1; 
