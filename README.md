@@ -113,18 +113,18 @@ To begin this project the group created operational and functional viewpoint dia
 | Total Gear Ratio           | Kg = 0.9           |        ----      |
 | Motor Torque Constant      | kt = 0.00768       |   (N.m)/A        |
 | Motor back-EMF constant    | km = 0.03          |    (V.s)/rad     |
-| Motor armature resistance  | Rm =  2.6           |   (ohm)          |
-| Mass of Rotary Arm         |  Mr = 0.250         | (kg)            |
-|           ----             |  Dr = 1              |        ----      | 
-|  Pendulum Viscous Damping coefficient   |   Dp = 1             |        ----      |
-| Distance from pivot to center of gravity   |   lp1 =  | (m) |
-| Gearbox Efficiency        | eta_g =  0.85         |       (η)_g  | 
-| Motor Efficiency          |  eta_m =  0.87        |       (η)_m   |
-| Rotation of the motor     | tau_1 = 0             |       (τ)_1         |
-| Rotation of the motor      | tau_2 = 0             |      (τ)_2         |
-|  ----                     | Bp = 0                |   ----            |
-|  Rotary arm Viscous Damping coefficient                   | Br = 0                |   ----            |
-| Potential Energy          |        ----          |     ----         |
+| Motor armature resistance  | Rm =  2.6          |   (ohm)          |
+| Mass of Rotary Arm         |  Mr = 0.250        | (kg)             |
+|           ----             |  Dr = 1            |        ----      | 
+| Pendulum Viscous Damping coefficient      |   Dp = 1             |        ----      |
+| Distance from pivot to center of gravity  |   lp1 =               |       (m)       |
+| Gearbox Efficiency                        | eta_g =  0.85         |       (η)_g     | 
+| Motor Efficiency                          |  eta_m =  0.87        |       (η)_m     |
+| Rotation of the motor                     | tau_1 = 0             |       (τ)_1     |
+| Rotation of the motor                     | tau_2 = 0             |      (τ)_2      |
+| Pendulum Viscous Damping coefficient      | Bp = 0                |      ----       |
+| Rotary arm Viscous Damping coefficient    | Br = 0                |      ----       |
+| Potential Energy                           |        ----          |      ----       |
 
 
 
