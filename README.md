@@ -76,7 +76,7 @@ To begin this project the group created operational and functional viewpoint dia
        src="https://user-images.githubusercontent.com/103708956/169402363-5b39790b-4f21-4e13-8e62-c6d75d5010b0.PNG"
 
             
-            "
+            
   >
 </p>
 
