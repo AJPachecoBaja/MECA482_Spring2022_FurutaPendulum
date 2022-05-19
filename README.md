@@ -49,8 +49,7 @@ This document summarizes the basic control theory, programming, and calculations
 
 ### 2.1 Sketch
 
-Our team 
-            it depicts the rotary pendulum in a freebody diagram.
+Our team depicts the rotary pendulum in a freebody diagram.
 
 <p align="center">
   <img 
@@ -66,9 +65,27 @@ Figure 2. Free Body Diagram of Rotary Pendulum.
 
 By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pendulum is controlled by two angles between the base-to-Rotary arm (Θ) and Rotary arm-to-Pendulum (α). The goal is to create script such that the two angles reach equilibrium and maintain a balanced pendulum in the upright position. Counterclockwise (CC) motion is depicted as a positve change in angle (Θ) for the system, with this sign convention, voltage was applied to the motor. This resulted in a positive voltage equaling a positive angle.
 
+To begin this project the group created operational and functional viewpoint diagrams, this is a key step to control system theory. With these diagrams we are able to get a sense of the physical, mechanical, and electrical model as a project overview. The diagrams are shown below.
 
-************ALSO ENTER OPERTATIONAL VIEW POINT AND FUNTIONAL DIAGRAM HERE**************
+<p align="center">
+    Operational Viewpoint
+     <br>
+  <img
+       width=757
+       height=406
+       src="https://user-images.githubusercontent.com/104785921/169253778-c6d3d230-39c8-4044-9ea0-f5187e605ef9.png"
+  >
+</p>
 
+<p align="center">
+    Functional Viewpoint
+     <br>
+  <img
+       width=616
+       height=539
+       src="https://user-images.githubusercontent.com/104785921/169254229-862943d5-e514-473a-bb0d-2f478a26c9de.png"
+  >
+</p>
 
 ### 2.2 Parameters
 
@@ -368,105 +385,94 @@ With this mathmatical model of the angular aceleration, state space equations/ma
 
  ### 3.1 Matlab
 
- <br>
-<font size="7">Creating a System Matrix</font>
- <br>
- In this Matlab code, the final [A], [B], [C] and [D] matrices are calculated and stored to be used in the Steady State Transfer function. 
  
- The raw matlab code can be found here
-
-A = [0 0 1 0; 
-    0 0 0 1; 
-    0 Lp^2 * Lr * g * Mp^2 / (4 * Jp * Lr ^ 2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) -(Lp^2 * eta_g * eta_m * Kg^2 * km * kt * Mp + 4 * Jp * eta_g * eta_m * Kg^2 * km * kt + Br * Lp^2 * Mp * Rm + 4 * Br * Jp * Rm) / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) -2 * Bp * Lp * Lr * Mp / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr); 
-     0 -2 / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * (-Lp * Lr^2 * g * Mp^2 * Rm - Jr * Lp * g * Mp * Rm) -2 / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * (Lp * Lr * eta_g * eta_m * Kg^2 * km * kt * Mp + Br * Lp * Lr * Mp * Rm) -2 / Rm / (4 * Jp * Lr ^ 2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * (2 * Bp * Lr^2 * Mp * Rm + 2 * Bp * Jr * Rm);];
-     
-B = [0; 0; -(-Lp^2 * eta_g * eta_m * Kg * kt * Mp - 4 * Jp * eta_g * eta_m * Kg * kt) / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr); 2 / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * Lp * Lr * eta_g * eta_m * Kg * kt * Mp;];
-
-<br>
-<br>
-
-C = [1 0 0 0];
-
-<br>
-<br>
-
-D = 0;
-
-<br>
-<br>
-
-<hx><b>
-<font size="5">Creating and Modeling the Steady State Transfer function for the System</font> 
-    </b></hx>
-
-<br>
-<br>
-[num,den]=ss2tf(A,B,C,D);
-
+   #### Creating a System Matrix
+   
+ In this Matlab code, the final [A], [B], [C] and [D] matrices are calculated using Eq. 27, Eq. 17 and Eq. 18, to be used in the Steady State Transfer function. 
+ 
+ The raw matlab code can be found here [ROTPEN_ABCD_eqns](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/ROTPEN_ABCD_eqns.m)
+ 
+ #### Creating and Modeling the Steady State Transfer function for the System</font>
+ 
+ The ROTPEN_ABCD_eqns code uses supporting matlab functions [setup_dbip.m](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/setup_dbip.m) and working in conjunction with the raw matlab code [FURPEN_SSR_eqns](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/FURPEN_SSR_eqns.m)
+ 
+ To create the Furuta Pendulum transfer function, with this model we are able to establish a connection between output and input of the overall system. The FURPEN_SSR_eqns supporting code is shown below.
+ 
+    %This runs furuta pendulum model and sets up its state space representation
+    FURPEN_SSR_eqns;
+    
+    % Transfer function system
+    [num,den]=ss2tf(A,B,C,D);
     TF = tf(num, den);
-    
     disp("Transfer Function Furuta Pendulum");
-    
     TF
     
     disp("Zeros");
-    
     disp(roots(num));
-    
     disp("Poles");
-    
     disp(roots(den));
-    
     figure(134);
-    
 
-<font size="5"> <hx> <b> Modeling the System Response </b> </hx> </font> 
+#### Modeling the System Response
 
-sys_ss = ss(A,B,C,D);
+    sys_ss = ss(A,B,C,D);
+    % Converting control canonical form
+    t = 0:0.1:10;
+    u = ones(size(t,2),1);
+    % Ramp Input - (Right now we dont need it)
+    %u=t;
+    u=sin(t);
+    x0 = [ 0 0 0 0];
+    X0_pendulum = [0 270 0 0];
 
-t = 0:0.1:10;
+    %[Y, T, X] = lsim(sys_ss,u,t)
+        % Plotting the result   (Initial Results)
+    figure; hold on;
+    plot(t,u,'r')                       % Reference Signal
+    %plot(t,Y,'m-.','linewidth',2);      % Systemn Response
+    axis([-1.5 t(end) -.5 1.5]);
+    legend('reference','response');
 
-u = ones(size(t,2),1);
+#### Consideration of Actuator Dynamics
 
-u=sin(t);
+    B = Kg * kt * B / Rm;
+    A(3,3) = A(3,3) - Kg^2*kt*km/Rm*B(3);
+    A(4,3) = A(4,4) - Kg^2*kt*km/Rm*B(4);
+    states(:) = {'theta' 'theta_dot' ' alpha' 'alpha_dot'};
+    States = reshape(states,[4,1])
+    inputs = {'u'};
+    outputs = {'theta';'alpha'};
 
-x0 = [ 0 0 0 0];
+#### Making the Open Loop
 
-X0_pendulum = [0 270 0 0];
-
-[Y, T, X] = lsim(sys_ss,u,t)
-
-Plotting the intial results:
-figure; hold on;
-
-plot(t,u,'r')                       % Reference Signal
-
-%plot(t,Y,'m-.','linewidth',2);      % Systemn Response
-
-axis([-1.5 t(end) -.5 1.5]);
-
-legend('reference','response');
-
-
-<font size="5"> <hx> <b> Consideration of Actuator Dynamics </b> </hx> </font> 
-
-B = Kg * kt * B / Rm;
-
-A(3,3) = A(3,3) - Kg^2*kt*km/Rm*B(3);
-
-A(4,3) = A(4,4) - Kg^2*kt*km/Rm*B(4);
-
-states(:) = {'theta' 'theta_dot' ' alpha' 'alpha_dot'};
-
-States = reshape(states,[4,1])
-
-inputs = {'u'};
-
-outputs = {'theta';'alpha'};
-
-
-<font size="5"> <hx> <b> Consideration of Actuator Dynamics </b> </hx> </font> 
-
+    % Open Loop System Model
+    % The Requirements of the System
+    zetaf_1 = 0.7;
+    wn = 4;
+    %     Desired Pole Location     (too fast so we can Neglect)
+    d_p3 = -30;
+    %     Desired Pole Location     (too fast so we can Neglect)
+    d_p4 = -40; 
+    % Converting control canonical form(Method 1)
+    [numtf, dentf] = ss2tf(A, B, C, D);
+    [Acc, Bcc, Ccc, Dcc] = tf2ss(numtf, dentf);
+    % Alternativelty one can use similarity transformation
+    %     State-Feedback GAIN
+    K = control_FURPEN(Acc, Bcc, zetaf_1, wn);
+    %K = control_FURPEN(Acc, Bcc, zetaf_1, wn, d_p3, d_p4);
+    % Requirements are: Acc-matrix, Bcc-matrix, zetaf_1, wn-Omega_n
+    % Using MATLAB code 'eig(A)' to find the open-loop poles of the system
+    eig(A);
+    %    Find Closed-Loop Poles
+    eig(A-B*K)
+    %mu = 2.3;
+    %   Ep : Potential Energy
+    Ep = Mp * g * Lp;
+    % New sytem with closed-loop
+    Anew = A-B*K;
+    %       Find Closed Loop Poles
+    eig(Anew)
+    %K_ENC = 2 * pi / ( 4 * 1024 )
 
 ### 3.2 Simulink
 
