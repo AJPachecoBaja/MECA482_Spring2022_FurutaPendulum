@@ -83,7 +83,6 @@ By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pend
 | V =  |    Volt = [(kg*m^2)/(A*s^3)] |
 
 
-
 |       Parameter            |       Symbol       |      Units       |
 |     :-------------:        |   :-------------:  |  :-------------: |
 | Mass of Pendulum           |       Mp = 0.128   |         kg       |
@@ -169,7 +168,7 @@ This section is to establish a mathematical connection between all parameters an
 
 
 <p align="center">
-    Equations. (5-6) : Non-conservative forces acting on arm and pendulum respectively
+    Eq. 5 & Eq. 6 : Non-conservative forces acting on arm and pendulum respectively
   <img
        width=607
        height=192
@@ -226,7 +225,8 @@ This section is to establish a mathematical connection between all parameters an
 
 
 <p align="center">
-    Eq. 11 : Generalized Eq. 10 to work with vector (<i>q</i>)
+    Eq. 11 : Generalized Eq. 10 to work with vector 
+    <br>
   <img
        width=785
        height=73
@@ -234,53 +234,146 @@ This section is to establish a mathematical connection between all parameters an
   >
 </p>
 
-Eq. 12 : 
-<hx> Identifying Relationships of Parameters in the System </hx>
 <p align="center">
-    Eq. 12 : Total Polar Moment of Inertia, Jp (<i>q</i>)
-    Jt = Jr*Jp + Mp*(Lp/2)^2*Jr + Jp*Mp*Lr^2;
-    </p>
+    Eq. 12 : Linearization of Equations of Motion for both Arm and Pendulum 
+    <br>
+  <img
+       width=990
+       height=88
+       src="https://user-images.githubusercontent.com/104785921/169220386-41414de8-5061-4f1a-a1c4-aa37217737d4.png"
+  >
+</p> 
+
 <p align="center">
-    Eq. 13 : Potential Energy of the System, Ep (<i>q</i>)
-    Ep = Mp * g * Lp
-    </p>
+    Eq. 12.1 : Suplemental equation for [Z]^T matrix in Eq. 12 
+    <br>
+  <img
+       width=157
+       height=80
+       src="https://user-images.githubusercontent.com/104785921/169221844-11b8d7b9-1db3-4bc0-88d7-2667998c04eb.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 12.2 : Suplemental equation for [Zo]^T matrix in Eq. 12
+    <br>
+  <img
+       width=139
+       height=83
+       src="https://user-images.githubusercontent.com/104785921/169222213-a0b92097-9d40-4e24-b81a-f69e6a8764be.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 13 & Eq. 14 : Linear State Space Equations (Denoted with A, B, C, and D matrices)
+    <br>
+  <img
+       width=531
+       height=99
+       src="https://user-images.githubusercontent.com/104785921/169222550-efff155b-d8ee-40e1-b847-419c7716794b.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 15: State of the Rotary Pendulum (<i>q</i>)
+    <br>
+  <img
+       width=769
+       height=88
+       src="https://user-images.githubusercontent.com/104785921/169223314-b27dbefc-313b-44ce-8dfb-55dd4555ae38.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 16: Output of the System (<i>q</i>)
+    <br>
+  <img
+       width=780
+       height=81
+       src="https://user-images.githubusercontent.com/104785921/169224531-05e292cf-f880-4011-8e72-71acf4a02498.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 17 & Eq. 18: C and D matrices, corresponding to the output equations (<i>q</i>)
+    <br>
+  <img
+       width=646
+       height=194
+       src="https://user-images.githubusercontent.com/104785921/169225543-6e8367f5-ffd9-436f-9145-112891b51f87.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 19 & Eq. 20: Linearized from Eq. 7 & Eq. 8 respectively. Initial conditions for all variables set to zero (<i>q</i>)
+    <br>
+  <img
+       width=783
+       height=178
+       src="https://user-images.githubusercontent.com/104785921/169225847-ad597110-43df-4a95-a68a-cb72dc1687ef.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 21 & Eq. 22: Displaying the Matrix and Determinite  (<i>q</i>)
+    <br>
+  <img
+       width=681
+       height=72
+       src="https://user-images.githubusercontent.com/104785921/169226274-ac748590-4564-4365-996c-aa5e77d8d948.png"
+       <br>
+  <img
+       width=775
+       height=188
+       src="https://user-images.githubusercontent.com/104785921/169226430-d0b0fb3f-0830-42bf-b32b-e40ffff103fe.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 23 & Eq. 24: Calculation for the angular accelerations for the Arm and Pendulum (<i>q</i>)
+    <br>
+  <img
+       width=786
+       height=181
+       src="https://user-images.githubusercontent.com/104785921/169232158-c44980cd-73c6-4057-aa29-04d63dcd0a8d.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 25 & Eq. 26: Substitute x3 for (Θ) and x4 for (α) (<i>q</i>)
+    <br>
+  <img
+       width=970
+       height=272
+       src="https://user-images.githubusercontent.com/104785921/169232728-e746d48a-9a3b-452c-b655-96390ac26fb2.png"
+  >
+</p>
+
+<p align="center">
+    Eq. 27: Final [A] and [B] matrices from state space equation Eq. 13 (<i>q</i>)
+    <br>
+  <img
+       width=782
+       height=392
+       src="https://user-images.githubusercontent.com/104785921/169233939-de70608c-c501-4fbd-a9ae-cf40e2ef7cc2.png"
+  >
+</p>
+
+With this mathmatical model of the angular aceleration, state space equations/matrices, and linearized motions the matlab system models were then coded with the intent to connect to a CoppeliaSim model and operate synchronously with one another. The code written can be seen below in the next section.
+
 --------------------------------------------------------------------------------
 ## 3 Simulation
 
 
 
  ### 3.1 Matlab
- 
 
- 
- 
- ``` 
- literally anything
- ```
- 
- 
- 
- 
- 
- 
- 
- 
+ <br>
 <font size="7">Creating a System Matrix</font>
-
-<br>
-<font size="2"> Creating a System Matrix </font>
-   
-<br>
-<font size="3">Creating a System Matrix</font>
-<br>
-<font size="4">Creating a System Matrix</font>
-<br>
-<font size="5">Creating a System Matrix</font>
-<br>
-<font size="6">Creating a System Matrix</font>
-<br>
-<font size="7">Creating a System Matrix</font>
-
+ <br>
+ In this Matlab code, the final [A], [B], [C] and [D] matrices are calculated and stored to be used in the Steady State Transfer function. 
+ 
+ The raw matlab code can be found here
 
 A = [0 0 1 0; 
     0 0 0 1; 
