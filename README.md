@@ -487,6 +487,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
        height=368
        src="https://user-images.githubusercontent.com/104785921/169392955-8538fa66-713e-4f63-abe2-b20745965494.png"
   >
+    </p>
 
 --------------------------------------------------------------------------------
 ## 4 Implementation
@@ -495,11 +496,15 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     
 This an industry-grade robotics simulator, allowing the team to fully simulate and implement our verified Matlab code to control a simplified model of a Furuta Pendulum. To establish a connection between the two programs we used a remote api function called B-Zero (b0). All of the B-Zero (b0) files can be found in the [FinalProject](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/tree/main/FinalProject) folder. Additionally within the same folder one can find the supporting CoppeliaSim scene [3D_Model_482Project_v20_CoppeliaFeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_CoppeliaFeedback.ttt) and Matlab feedback scene [3D_Model_482Project_v20_Matlabfeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_Matlabfeedback.ttt).
     
-    The Furuta Pendulum model seen below is made by connecting the Base, Arm, and Pendulum to two servo-actuator motors. With the code we created and tested we can control the model to self balance in an upright position for an indefinite amount of time. 
+The Furuta Pendulum model seen below is made by connecting the Base, Arm, and Pendulum to two servo-actuator motors. With the code we created and tested we can control the model to self balance in an upright position for an indefinite amount of time. [recording_2022_05_19-13_11-11.mp4](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/recording_2022_05_19-13_11-11.mp4) is a video recording being submitted for our finalized deliverable simulation.
     
+   <p align="center">
+        <img
+             src="https://user-images.githubusercontent.com/104785921/169405956-3b06a414-db69-439a-a605-12414ce5c457.gif"       
+     </p>
+
     
-    
-    Shown above is a video of our Simulated Furuta Pendulum model. With a functioning simulation the project can be considered completed, although with the model that we have designed it would be possible to create a physical model of our system. The requirements for a functional physical model would include Sensor Calibration, manufacturing of parts (base, arm, and pendulumm), as well as selecting motors and servos to control the system
+With a functioning simulation the project can be considered completed, although with the model that we have designed it would be possible to create a physical model of our system. The requirements for a functional physical model would include Sensor Calibration, manufacturing of parts (base, arm, and pendulumm), as well as selecting motors and servos to control the system
     
 --------------------------------------------------------------------------------
 ## 5 References
