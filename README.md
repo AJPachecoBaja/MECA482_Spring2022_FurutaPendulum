@@ -479,7 +479,22 @@ With this mathmatical model of the angular aceleration, state space equations/ma
 
 ### 3.2 Simulink
 
-The Simulink program is a platform to create Model-Based design, 
+   The Simulink program is a platform to create Model-Based, systen level design structures. With this we are able to simulate the Matlab code and verify our systems input/output values with auto generated graphs. using a block diagram format the Simulink program is easy to understand and follow, our raw simulink file can be found at [s_rotpen_bal](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/s_rotpen_bal.slx). Shown below is our final Simulink model diagram.
+   
+   <p align="center">
+  <img
+       width=1423
+       height=368
+       src="https://user-images.githubusercontent.com/104785921/169392955-8538fa66-713e-4f63-abe2-b20745965494.png"
+  >
+
+--------------------------------------------------------------------------------
+## 4 Implementation
+    
+### CoppeliaSim
+    
+This an industry-grade robotics simulator, allowing the team to fully simulate and implement our verified Matlab code to control a simplified model of a Furuta Pendulum. To establish a connection between the two programs we used a remote api function called B-Zero (b0). All of the B-Zero (b0) files can be found in the [FinalProject](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/tree/main/FinalProject) folder. Additionally within the same folder one can find the supporting CoppeliaSim scene [3D_Model_482Project_v20_CoppeliaFeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_CoppeliaFeedback.ttt) and Matlab feedback scene [3D_Model_482Project_v20_Matlabfeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_Matlabfeedback.ttt).
+    
 --------------------------------------------------------------------------------
 ## 4 Implementation
 
