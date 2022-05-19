@@ -248,7 +248,7 @@ Eq. 12 :
 
 
 
-### 3.1 Matlab
+ 3.1 Matlab
 <font size="1">Creating a System Matrix</font>
 
 <br>
@@ -259,11 +259,11 @@ Eq. 12 :
 <br>
 <font size="4"><b> Creating a System Matrix </b></font>
 <br>
-<font size="5"><b> Creating a System Matrix </b></font>
+<font size="5"> Creating a System Matrix </font>
 <br>
-<font size="6"><b> Creating a System Matrix </b></font>
+<font size="6"> Creating a System Matrix </font>
 <br>
-<font size="7"><b> Creating a System Matrix </b></font>
+<font size="7"> Creating a System Matrix </font>
 
 A = [0 0 1 0; 
     0 0 0 1; 
