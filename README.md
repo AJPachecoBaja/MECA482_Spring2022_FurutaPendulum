@@ -221,7 +221,7 @@ This section is to establish a mathmatical connection between all parameters and
 
 
 <p align="center">
-    Eq. 11 : Generalized Eq. 10 to work with vector q
+    Eq. 11 : Generalized Eq. 10 to work with vector (<i>q</i>)
   <img
        width=785
        height=73
