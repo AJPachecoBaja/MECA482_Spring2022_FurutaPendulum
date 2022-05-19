@@ -103,6 +103,7 @@ This section is to establish a mathmatical connection between all parameters and
    
    <p align="center">
     Eq. 1 : Euler-Lagrange Equation
+    <br>
   <img
        width=612
        height=116
