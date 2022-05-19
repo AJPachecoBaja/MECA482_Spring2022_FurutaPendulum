@@ -253,7 +253,9 @@ Eq. 12 :
  
 
  
-<font size="7"> Creating a System Matrix </font>
+<font size="7"> 
+    Creating a System Matrix
+</font>
 
 <br>
 <b><font size="2"> Creating a System Matrix </font>
