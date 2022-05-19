@@ -1,7 +1,4 @@
-%%RUN setup_dbip.m 
-%  Project_Project > Quasar > Advanced Application > Software > setup_dbip.m
-%  NEED config_Sp.m   &  config_srv02.m
-%function [K,N,info,Ep, Ek,K_swing1,K_swing2,mu,eps] = setup_FURPEN()
+%%ROTPEN_ABCD_eqns.m
 
     % Set the electromechanical parameters
     eta_g = 0.85e0;
@@ -82,7 +79,6 @@ Dp1 = 1;    % Viscous Damping coefficient (Short Bottom) Pendulum
 % IMAX_AMP  Amplifier Maximum Output Current                          (A)
 
 %%  Identify the System
-%Jt = Jp*Mp*Lr^2+Jr*Jp+(1/4)*Jr*Mp*Lp^2
 Jt = Jr*Jp + Mp*(Lp/2)^2*Jr + Jp*Mp*Lr^2;
 
 
@@ -103,7 +99,6 @@ sys_ss = ss(A,B,C,D);
 t = 0:0.1:10;
 u = ones(size(t,2),1);
 % Ramp Input - (Right now we dont need it)
-%u=t;
 u=sin(t);
 x0 = [ 0 0 0 0];
 X0_pendulum = [0 270 0 0];
