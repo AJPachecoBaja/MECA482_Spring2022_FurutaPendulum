@@ -63,7 +63,7 @@ Our team
 Figure 2. Free Body Diagram of Rotary Pendulum.
     </p>
 
-By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pendulum is controlled by two angles between the base-to-rotary arm (Θ) and rotary arm-to-Pendulum (α). The goal is to create script such that the two angles reach equilibrium and maintain a balanced pendulum in the upright position. Counter-Clockwise (CC) motion is depicted as a positve change in angle (Θ) for the system, with this sign convention, voltage was applied to the motor. This resulted in a positive voltage equaling a positive angle.
+By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pendulum is controlled by two angles between the base-to-Rotary arm (Θ) and Rotary arm-to-Pendulum (α). The goal is to create script such that the two angles reach equilibrium and maintain a balanced pendulum in the upright position. Counterclockwise (CC) motion is depicted as a positve change in angle (Θ) for the system, with this sign convention, voltage was applied to the motor. This resulted in a positive voltage equaling a positive angle.
 
 ### 2.2 Parameters
 
@@ -111,7 +111,7 @@ By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pend
 
 ### 2.3 Motion Eqautions
 
-This section is to establish a mathmatical connection between all parameters and actual motion code used to control the Furuta Pendulum Simulink and CoppeliaSim models. We shall cover the derivations of motion for the pendulum and rotary arms. The following equations were provided by Quanser workbook and have been tweaked slightly to create working matlab code. Brief descriptions of the equations will be stated above the equation image.
+This section is to establish a mathmatical connection between all parameters and actual motion code used to control the Furuta Pendulum Simulink and CoppeliaSim models. We shall cover the derivations of motion for the pendulum and rotary arms. The following equations are used to create a working matlab environmental architecture. Brief descriptions of the equations are provided, preceding each respective image.
 
 
    
