@@ -117,14 +117,14 @@ To begin this project the group created operational and functional viewpoint dia
 | Mass of Rotary Arm         |  Mr = 0.250         | (kg)            |
 |           ----             |  Dr = 1              |        ----      | 
 |                 ----       |   Dp = 1             |        ----      |
-| Distance from pivot to center of gravity          | lp1 =     | (m) |
-| Gearbox Efficiency        | eta_g =  0.85         |  (η)_g  | 
-| Motor Efficiency          |  eta_m =  0.87        | (η)_m   |
-| Rotation of the motor     | tau_1 = 0             | (τ)_1 |
-| Rotation of the motor      | tau_2 = 0             | (τ)_2  |
-|  ----                     | Bp = 0                |   ----  |
-|   ----                    | Br = 0                |   ----  |
-| Potential Energy | 
+| Distance from pivot to center of gravity   |   lp1 =  | (m) |
+| Gearbox Efficiency        | eta_g =  0.85         |       (η)_g  | 
+| Motor Efficiency          |  eta_m =  0.87        |       (η)_m   |
+| Rotation of the motor     | tau_1 = 0             |       (τ)_1         |
+| Rotation of the motor      | tau_2 = 0             |      (τ)_2         |
+|  ----                     | Bp = 0                |   ----            |
+|   ----                    | Br = 0                |   ----            |
+| Potential Energy          |        ----          |     ----         |
 
 
 
@@ -264,7 +264,7 @@ This section is to establish a mathematical connection between all parameters an
 </p> 
 
 <p align="center">
-    Eq. 12.1 : Suplemental equation for [Z]^T matrix in Eq. 12 
+    Eq. 12.1 : Suplemental equation for <b>Z</b><sup>T</sup> matrix in Eq. 12 
     <br>
   <img
        width=157
@@ -274,7 +274,7 @@ This section is to establish a mathematical connection between all parameters an
 </p>
 
 <p align="center">
-    Eq. 12.2 : Suplemental equation for [Zo]^T matrix in Eq. 12
+    Eq. 12.2 : Suplemental equation for <b>Z</b><sub>o</sub><sup>T</sup> matrix in Eq. 12
     <br>
   <img
        width=139
@@ -567,7 +567,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     
 This an industry-grade robotics simulator, allowing the team to fully simulate and implement our verified Matlab code to control a simplified model of a Furuta Pendulum. To establish a connection between the two programs we used a remote api function called B-Zero (b0). All of the B-Zero (b0) files can be found in the [FinalProject](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/tree/main/FinalProject) folder. Additionally within the same folder one can find the supporting CoppeliaSim scene [3D_Model_482Project_v20_CoppeliaFeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_CoppeliaFeedback.ttt) and Matlab feedback scene [3D_Model_482Project_v20_Matlabfeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_Matlabfeedback.ttt).
     
-The Furuta Pendulum model seen below is made by connecting the Base, Arm, and Pendulum to two servo-actuator motors. With the code we created and tested we can control the model to self balance in an upright position for an indefinite amount of time. [recording_2022_05_19-13_11-11.mp4](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/recording_2022_05_19-13_11-11.mp4) is a video recording being submitted for our finalized deliverable simulation.
+The Furuta Pendulum model seen below is made by connecting the Base, Arm, and Pendulum to two servo-actuator motors. With the code we created and tested we can control the model to self balance in an upright position for an indefinite amount of time. [Coppelia-Furuta Self Balancing Video](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/recording_2022_05_19-13_11-11.mp4) is a video recording being submitted for our finalized deliverable simulation.
     
    <p align="center">
         <img
