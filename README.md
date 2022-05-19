@@ -117,13 +117,13 @@ To begin this project the group created operational and functional viewpoint dia
 | Mass of Rotary Arm         |  Mr = 0.250         | (kg)            |
 |           ----             |  Dr = 1              |        ----      | 
 |                 ----       |   Dp = 1             |        ----      |
-| Distance from pivot to center of gravity          | lp1 =   | (m) |
+| Distance from pivot to center of gravity          | lp1 =     | (m) |
 | Gearbox Efficiency        | eta_g =  0.85         |  (η)_g  | 
 | Motor Efficiency          |  eta_m =  0.87        | (η)_m   |
 | Rotation of the motor     | tau_1 = 0             | (τ)_1 |
 | Rotation of the motor      | tau_2 = 0             | (τ)_2  |
-|  | Bp = 0 |   |
-|   | Br = 0 |   |
+|  ----                     | Bp = 0                |   ----  |
+|   ----                    | Br = 0                |   ----  |
 | Potential Energy | 
 
 
