@@ -486,10 +486,9 @@ With this mathmatical model of the angular aceleration, state space equations/ma
        height=368
        src="https://user-images.githubusercontent.com/104785921/169392955-8538fa66-713e-4f63-abe2-b20745965494.png"
   >
-    <br>
     </p>
     
-   
+   <br>
   
   
    Supporting structures for the Simulink diagram, seperate <b>Find X State</b> and <b>Scopes</b> block diagrams that were created, are illustrated below.
@@ -515,8 +514,11 @@ With this mathmatical model of the angular aceleration, state space equations/ma
        src="https://user-images.githubusercontent.com/104785921/169409759-9b0d15b8-369f-4249-be6f-08d7378ace51.png"
   >
   
-    </p>
+   
+<br>
     <br>
+    
+    
   <p align="center">
   The output graphs of the Simulink testing and verification can be seen below:
    </p>
@@ -567,7 +569,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     
 This an industry-grade robotics simulator, allowing the team to fully simulate and implement our verified Matlab code to control a simplified model of a Furuta Pendulum. To establish a connection between the two programs we used a remote api function called B-Zero (b0). All of the B-Zero (b0) files can be found in the [FinalProject](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/tree/main/FinalProject) folder. Additionally within the same folder one can find the supporting CoppeliaSim scene [3D_Model_482Project_v20_CoppeliaFeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_CoppeliaFeedback.ttt) and Matlab feedback scene [3D_Model_482Project_v20_Matlabfeedback.ttt](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/FinalProject/3D_Model_482Project_v20_Matlabfeedback.ttt).
     
-The Furuta Pendulum model seen below is made by connecting the Base, Arm, and Pendulum to two servo-actuator motors. With the code we created and tested we can control the model to self balance in an upright position for an indefinite amount of time. [Coppelia-Furuta Self Balancing Video](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/recording_2022_05_19-13_11-11.mp4) is a video recording being submitted for our finalized deliverable simulation.
+The Furuta Pendulum model seen below is made by connecting the Base, Arm, and Pendulum to two servo-actuator motors. With the code we created and tested we can control the model to self balance in an (<i>inverted</i>) upright position for an indefinite amount of time. [Coppelia-Furuta Self Balancing Video](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/recording_2022_05_19-13_11-11.mp4) is a video recording being submitted for our finalized deliverable simulation.
     
    <p align="center">
         <img
