@@ -254,10 +254,8 @@ Eq. 12 :
 
  
  
- ```
- <font size="7"> 
+ ``` 
  literally anything
- </font>
  ```
  
  
@@ -273,15 +271,15 @@ Eq. 12 :
 <font size="2"> Creating a System Matrix </font>
    
 <br>
-<font size="3"><b> Creating a System Matrix </b></font>
+<font size="3">Creating a System Matrix</font>
 <br>
-<font size="4"><b> Creating a System Matrix </b></font>
+<font size="4">Creating a System Matrix</font>
 <br>
-<font size="5"> Creating a System Matrix </font>
+<font size="5">Creating a System Matrix</font>
 <br>
-<font size="6"> Creating a System Matrix </font>
+<font size="6">Creating a System Matrix</font>
 <br>
-<font size="7"> Creating a System Matrix </font>
+<font size="7">Creating a System Matrix</font>
 
 
 A = [0 0 1 0; 
@@ -304,7 +302,9 @@ D = 0;
 <br>
 <br>
 
-<font size= "5"> hx> <b> Creating and Modeling the Steady State Transfer function for the System </b> </hx> </font> 
+<hx><b>
+<font size="5">Creating and Modeling the Steady State Transfer function for the System</font> 
+    </b></hx>
 
 <br>
 <br>
