@@ -144,7 +144,7 @@ Eq. 5 & 6 : Non-conservative forces acting on arm and pendulum respectively
 <p align="center">
   <img
        width=660
-       height=232
+       height=200
        src="https://user-images.githubusercontent.com/104785921/168965840-ebca4c93-d595-4ecc-a6fc-3b5356b4e0da.png"
   >
 </p>
@@ -153,7 +153,7 @@ Eq. 7 : Equation of Motion (Theta) for rotary Arm
 
 <p align="center">
   <img
-       width=720
+       width=700
        height=232
        src="https://user-images.githubusercontent.com/104785921/168976456-7059417a-9641-4c54-9a25-77985ec5160a.png"
   >
