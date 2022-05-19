@@ -90,10 +90,17 @@ By analyzing the figure above, the basic operation of the pendulum is controlled
 | Total Gear Ratio           | Kg = 0.9           |        ----      |
 | Motor Torque Constant      | kt = 0.00768       |   (N.m)/A        |
 | Motor back-EMF constant    | km = 0.03          |    (V.s)/rad     |
-| Motor armaturce resistance | Rm =               |   (ohm)          |
-
+| Motor armature resistance | Rm =  2.6             |   (ohm)          |
+| Mass of Rotary Arm        |  Mr = 0.250             | (kg)            |
 |           ----             |  Dr = 1            |        ----      | 
-| Motor Armature Resistance  |   Dp1 = 1          |        ----      |
+|                 ----            |   Dp = 1          |        ----      |
+| Distance from pivot to center of gravity | lp1 =   | (m) |
+| Gearbox Efficiency | eta_g =   |  ----  | 
+| Motor Efficiency |  eta_m =    | ----   |
+
+
+
+
 
 
 ### 2.3 Motion Eqautions
@@ -221,6 +228,8 @@ Eq. 12 :
 ## 3 Simulation
 
 ### 3.1 Matlab
+
+
 
 ### 3.2 Simulink
 
