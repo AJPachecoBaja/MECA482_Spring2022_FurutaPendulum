@@ -184,6 +184,7 @@ This section is to establish a mathmatical connection between all parameters and
 
 <p align="center">
     Eq. 9 : Torque Equation
+     <br>
   <img
        width=686
        height=101
@@ -195,6 +196,7 @@ This section is to establish a mathmatical connection between all parameters and
 
 <p align="center">
     Eq. 10 : Typical format of a Equation of Motion
+     <br>
   <img
        width=665
        height=65
