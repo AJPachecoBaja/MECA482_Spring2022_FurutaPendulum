@@ -487,6 +487,70 @@ With this mathmatical model of the angular aceleration, state space equations/ma
        src="https://user-images.githubusercontent.com/104785921/169392955-8538fa66-713e-4f63-abe2-b20745965494.png"
   >
     </p>
+    
+   Supporting structures for the Simulink diagram, seperate Find X State and Scopes block diagrams were created.
+   
+   <p align="center">
+    Find X State Block Diagram
+    <br>
+  <img
+       width=882
+       height=565
+       src="https://user-images.githubusercontent.com/104785921/169409579-b9a5ea7c-0d19-46f2-91c4-d1156d9823ed.png"
+  >
+    </p>
+
+<p align="center">
+    Scopes Block Diagram
+    <br>
+  <img
+       width=1001
+       height=582
+       src="https://user-images.githubusercontent.com/104785921/169409759-9b0d15b8-369f-4249-be6f-08d7378ace51.png"
+  >
+    </p>
+    
+  The output graphs of the Simulink testing and verification can be seen below
+  
+  <p align="center">
+    Scopes Output Graph
+    <br>
+  <img
+       width=750
+       height=538
+       src="https://user-images.githubusercontent.com/104785921/169410305-8beeeb0d-cad2-4d1e-857d-a2203eed6a8d.png"
+  >
+    </p>
+    
+  <p align="center">
+    Theta (degrees) Output Graph
+    <br>
+  <img
+       width=748
+       height=383
+       src="https://user-images.githubusercontent.com/104785921/169410420-daf9d4c7-7c30-4474-8bb6-dc05c4d00ad9.png"
+  >
+    </p>
+    
+  <p align="center">
+    Alpha (degrees) Output Graph
+    <br>
+  <img
+       width=784
+       height=626
+       src="https://user-images.githubusercontent.com/104785921/169410493-8d790e02-4ba5-4e92-a31f-7123692c3d08.png"
+  >
+    </p>
+    
+  <p align="center">
+    Velocity (Vm) Output Graph
+    <br>
+  <img
+       width=901
+       height=676
+       src="https://user-images.githubusercontent.com/104785921/169410533-7feb0b31-f563-45de-b739-920b24979868.png"
+  >
+    </p>
 
 --------------------------------------------------------------------------------
 ## 4 Implementation
