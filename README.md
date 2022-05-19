@@ -28,6 +28,35 @@ Created by Sean Black, Laine Wood, and Andrew Pacheco
 A rotary (<i>inverted</i>) pendulum, also known as a Furuta Pendulum, is a non-linear, self-balancing control system. The basic design is created using two rotating masses connected to a base, this is a tool used far and wide to teach the basic principles of control systems designs.  The machine consists of a motor actuator connected to the base, an arm which is free to rotate around the horizontal axis, and an arm that is free to rotate around the vertical axis. The overall system goal is to balance the vertical arm, or pendulum, in an upright position by controlling the rotation of the motor about the horizontal axis. Shown below in Figure (1) is an example of a Furuta Pendulum.
 
 
+
+
+<font size="7"> Creating a System Matrix </font>
+
+<br>
+<b><font size="2"> Creating a System Matrix </font>
+    </b>
+<br>
+<font size="3"><b> Creating a System Matrix </b></font>
+<br>
+<font size="4"><b> Creating a System Matrix </b></font>
+<br>
+<font size="5"> Creating a System Matrix </font>
+<br>
+<font size="6"> Creating a System Matrix </font>
+<br>
+<font size="7"> Creating a System Matrix </font>
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center">
   <img 
     width="380"
