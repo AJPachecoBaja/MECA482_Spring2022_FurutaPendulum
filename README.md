@@ -14,7 +14,6 @@ Created by Sean Black, Laine Wood, and Andrew Pacheco
     - 2.1 Sketch
     - 2.2 Parameters
     - 2.3 Motion Equations
-    - 2.4 State Space Representation
     
 - [3 Simulation](#3-Simulation)
 
