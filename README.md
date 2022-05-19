@@ -249,12 +249,20 @@ Eq. 12 :
 
 
 ### 3.1 Matlab
-<font size="1"><b> Creating a System Matrix </b></font>
-<font size="2"><b> Creating a System Matrix </b></font>
+<font size="1">Creating a System Matrix</font>
+
+<br>
+<b><font size="2"> Creating a System Matrix </font>
+    </b>
+<br>
 <font size="3"><b> Creating a System Matrix </b></font>
+<br>
 <font size="4"><b> Creating a System Matrix </b></font>
+<br>
 <font size="5"><b> Creating a System Matrix </b></font>
+<br>
 <font size="6"><b> Creating a System Matrix </b></font>
+<br>
 <font size="7"><b> Creating a System Matrix </b></font>
 
 A = [0 0 1 0; 
@@ -264,12 +272,23 @@ A = [0 0 1 0;
      
 B = [0; 0; -(-Lp^2 * eta_g * eta_m * Kg * kt * Mp - 4 * Jp * eta_g * eta_m * Kg * kt) / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr); 2 / Rm / (4 * Jp * Lr^2 * Mp + Jr * Lp^2 * Mp + 4 * Jp * Jr) * Lp * Lr * eta_g * eta_m * Kg * kt * Mp;];
 
+<br>
+<br>
+
 C = [1 0 0 0];
+
+<br>
+<br>
 
 D = 0;
 
+<br>
+<br>
+
 <font size= "5"> hx> <b> Creating and Modeling the Steady State Transfer function for the System </b> </hx> </font> 
 
+<br>
+<br>
 [num,den]=ss2tf(A,B,C,D);
 
     TF = tf(num, den);
