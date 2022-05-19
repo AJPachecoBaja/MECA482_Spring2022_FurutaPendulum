@@ -73,7 +73,10 @@ To begin this project the group created operational and functional viewpoint dia
   <img
        width=757
        height=406
-       src="https://user-images.githubusercontent.com/104785921/169253778-c6d3d230-39c8-4044-9ea0-f5187e605ef9.png"
+       src="https://user-images.githubusercontent.com/103708956/169402363-5b39790b-4f21-4e13-8e62-c6d75d5010b0.PNG"
+
+            
+            "
   >
 </p>
 
