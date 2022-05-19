@@ -248,8 +248,9 @@ Eq. 12 :
 
 
 
- 3.1 Matlab
-<font size="1">Creating a System Matrix</font>
+ ###3.1 Matlab
+ 
+<font size="7"> Creating a System Matrix </font>
 
 <br>
 <b><font size="2"> Creating a System Matrix </font>
