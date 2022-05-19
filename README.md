@@ -258,7 +258,7 @@ This section is to establish a mathematical connection between all parameters an
     Eq. 12 : Linearization of Equations of Motion for both Arm and Pendulum 
     <br>
   <img
-       width=990
+       width=908
        height=88
        src="https://user-images.githubusercontent.com/104785921/169220386-41414de8-5061-4f1a-a1c4-aa37217737d4.png"
   >
