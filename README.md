@@ -249,7 +249,7 @@ Eq. 12 :
 
 
 ### 3.1 Matlab
-<hx> <b> Creating a System Matrix </b> </hx>
+<font size= "5"> <hx> <b> Creating a System Matrix </b> </hx> </font> 
 
 A = [0 0 1 0; 
     0 0 0 1; 
@@ -262,7 +262,7 @@ C = [1 0 0 0];
 
 D = 0;
 
-<hx> <b> Creating and Modeling the Steady State Transfer function for the System </b> </hx>
+<font size= "5"> hx> <b> Creating and Modeling the Steady State Transfer function for the System </b> </hx> </font> 
 
 [num,den]=ss2tf(A,B,C,D);
 
@@ -281,8 +281,9 @@ D = 0;
     disp(roots(den));
     
     figure(134);
+    
 
-<hx> <b> Modeling the System Response </b> </hx>
+<font size="5"> <hx> <b> Modeling the System Response </b> </hx> </font> 
 
 sys_ss = ss(A,B,C,D);
 
@@ -309,7 +310,8 @@ axis([-1.5 t(end) -.5 1.5]);
 
 legend('reference','response');
 
-<hx> <b> Consideration of Actuator Dynamics </b> </hx>
+
+<font size="5"> <hx> <b> Consideration of Actuator Dynamics </b> </hx> </font> 
 
 B = Kg * kt * B / Rm;
 
@@ -325,7 +327,8 @@ inputs = {'u'};
 
 outputs = {'theta';'alpha'};
 
-<hx> <b> Consideration of Actuator Dynamics </b> </hx>
+
+<font size="5"> <hx> <b> Consideration of Actuator Dynamics </b> </hx> </font> 
 
 
 ### 3.2 Simulink
