@@ -48,7 +48,8 @@ This document summarizes the basic control theory, programming, and calculations
 
 ### 2.1 Sketch
 
-Our team followed the provided workbook Rotary Pendulum (ROTPEN) published by Quanser. The figure below is provided from the Quanser workbook, it depicts the rotarty pendulum in a freebody diagram.
+Our team 
+            it depicts the rotarty pendulum in a freebody diagram.
 
 <p align="center">
   <img 
@@ -74,7 +75,7 @@ By analyzing the figure above, the basic operation of the pendulum is controlled
 | N =  |    Newton                    |
 | A =  |     Area                     |
 | Ω =  |    Ohm                       |
-| V =  |    Volt = [(kg*m^2)/(s^3*A)] |
+| V =  |    Volt = [(kg*m^2)/(A*s^3)] |
 
 
 
