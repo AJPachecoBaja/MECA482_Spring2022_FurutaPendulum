@@ -249,13 +249,9 @@ Eq. 12 :
 
 
 
- ###3.1 Matlab
+ ### 3.1 Matlab
  
- @settings {
-  font-size: 100;
-  Creating a System Matrix
-}
- 
+
  
 <font size="7"> Creating a System Matrix </font>
 
