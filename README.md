@@ -115,6 +115,7 @@ This section is to establish a mathmatical connection between all parameters and
 
 <p align="center">
     Eq. 2 : Generalized Polar Coordinates
+     <br>
   <img
        width=621
        height=90
@@ -126,6 +127,7 @@ This section is to establish a mathmatical connection between all parameters and
 
 <p align="center">
     Eq. 3 : Generalized Force on Arm (Theta)
+     <br>
   <img
        width=612
        height=89
@@ -137,6 +139,7 @@ This section is to establish a mathmatical connection between all parameters and
 
 <p align="center">
     Eq. 4 : Generalized Force on Pendulum (Alpha)
+     <br>
   <img
        width=615
        height=103
