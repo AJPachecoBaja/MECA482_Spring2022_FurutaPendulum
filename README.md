@@ -81,17 +81,19 @@ By analyzing the figure above, the basic operation of the pendulum is controlled
 |       Parameter            |       Symbol       |      Units       |
 |     :-------------:        |   :-------------:  |  :-------------: |
 | Mass of Pendulum           |       Mp = 0.128   |         kg       |
-| Mass of Pendulum           | Mp1 = 0.128        |         kg       |
 | Pendulum Length            |        Lp = 0.316  |    m             | 
 | Pendulum Moment of Inertia | Jp = 5.43*10^(-3)  | kg*m^2           |
 | Arm Length                 | Lr = 0.216         |   m              |
 | Arm Moment of Inertia      | Jr = 20            |     kg*m^2       |
-| Gravity                    | G = 9.81           |      m/s^2       |
+| Gravity                    | g = 9.81           |      m/s^2       |
 | Total Gear Ratio           | Kg = 0.9           |        ----      |
-| Motor Torque Constant      | Kt = 0.00768       |   (N.m)/A        |
-| Motor back-EMF constant    | Km = 0.03          |    (V.s)/rad     |
+| Motor Torque Constant      | kt = 0.00768       |   (N.m)/A        |
+| Motor back-EMF constant    | km = 0.03          |    (V.s)/rad     |
+| Motor armaturce resistance | Rm =               |   (ohm)          |
+
 |           ----             |  Dr = 1            |        ----      | 
 | Motor Armature Resistance  |   Dp1 = 1          |        ----      |
+
 
 ### 2.3 Motion Eqautions
 
