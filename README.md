@@ -369,7 +369,7 @@ This section is to establish a mathematical connection between all parameters an
 </p>
 
 <p align="center">
-    Eq. 27: Final [A] and [B] matrices from state space equation Eq. 13 (<i>q</i>)
+    <font size="5">Eq. 27: Final [A] and [B] matrices from state space equation Eq. 13 (<i>q</i>)</font>
     <br>
   <img
        width=782
@@ -510,8 +510,9 @@ With this mathmatical model of the angular aceleration, state space equations/ma
   >
     </p>
     
+  <p align="center">
   The output graphs of the Simulink testing and verification can be seen below
-  
+   </p>
   <p align="center">
     Scopes Output Graph
     <br>
