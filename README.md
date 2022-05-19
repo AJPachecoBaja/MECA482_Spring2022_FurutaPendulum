@@ -486,12 +486,18 @@ With this mathmatical model of the angular aceleration, state space equations/ma
        height=368
        src="https://user-images.githubusercontent.com/104785921/169392955-8538fa66-713e-4f63-abe2-b20745965494.png"
   >
+    <br>
     </p>
     
-   Supporting structures for the Simulink diagram, seperate Find X State and Scopes block diagrams were created.
+   
+  
+  
+   Supporting structures for the Simulink diagram, seperate <b>Find X State</b> and <b>Scopes</b> block diagrams that were created, are illustrated below.
+   
+   <br>
    
    <p align="center">
-    Find X State Block Diagram
+    Find X State, Block Diagram:
     <br>
   <img
        width=882
@@ -501,13 +507,14 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     </p>
 
 <p align="center">
-    Scopes Block Diagram:
+    Scopes, Block Diagram:
     <br>
   <img
        width=1001
        height=582
        src="https://user-images.githubusercontent.com/104785921/169409759-9b0d15b8-369f-4249-be6f-08d7378ace51.png"
   >
+  
     </p>
     <br>
   <p align="center">
