@@ -501,7 +501,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     </p>
 
 <p align="center">
-    Scopes Block Diagram
+    Scopes Block Diagram:
     <br>
   <img
        width=1001
@@ -509,12 +509,12 @@ With this mathmatical model of the angular aceleration, state space equations/ma
        src="https://user-images.githubusercontent.com/104785921/169409759-9b0d15b8-369f-4249-be6f-08d7378ace51.png"
   >
     </p>
-    
+    <br>
   <p align="center">
-  The output graphs of the Simulink testing and verification can be seen below
+  The output graphs of the Simulink testing and verification can be seen below:
    </p>
   <p align="center">
-    Scopes Output Graph
+    Scopes, Output Graph:
     <br>
   <img
        width=750
@@ -524,7 +524,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     </p>
     
   <p align="center">
-    Theta (degrees) Output Graph
+    Theta (degrees) [Θ°], Output Graph:
     <br>
   <img
        width=748
@@ -534,7 +534,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     </p>
     
   <p align="center">
-    Alpha (degrees) Output Graph
+    Alpha (degrees) [α°] Output Graph:
     <br>
   <img
        width=784
@@ -544,7 +544,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     </p>
     
   <p align="center">
-    Velocity (Vm) Output Graph
+    Voltage (Vm), Output Graph:
     <br>
   <img
        width=901
