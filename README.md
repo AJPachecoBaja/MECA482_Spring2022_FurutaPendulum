@@ -581,6 +581,15 @@ With a functioning simulation the project can be considered completed, although 
     
 --------------------------------------------------------------------------------
 ## 5 References
+    
+Quanser, Rotary Inverted Pendulum, Retrieved by Jan, 27, 2020 from
+https://www.quanser.com/products/rotary-inverted-pendulum/
+    
+Control System Tutorials for MATLAB and Simulink, Retrieved by Jan, 27, 2020 from
+http://ctms.engin.umich.edu/CTMS/index.php?example=InvertedPendulum&section=SystemModeling
+    
+Kildare, R., Hansen E., Leon, E., PID Control of Furuta Pendulum, Control System Design Project Fall
+2019
 
 ---------------------------------------------------------------------------------
 
