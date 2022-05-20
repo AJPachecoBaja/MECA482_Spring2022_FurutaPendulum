@@ -125,7 +125,7 @@ To begin this project the group created operational and functional viewpoint dia
 | Rotation of the motor                     | tau_2 = 0             |      (τ)_2       |
 | Arm Viscious Friction coefficient         | Br = 0                |      ----        |
 | Pendulum Viscous Damping coefficient      | Bp = 0                |      ----        |
-| Potential Energy                          | Ep =  Mp * g * Lp     |        J         |
+| Potential Energy                          | Ep =  Mp * g * Lp     |        (J)       |
 
 
 
@@ -285,7 +285,7 @@ This section is to establish a mathematical connection between all parameters an
 </p>
 
 <p align="center">
-    Eq. 13 & Eq. 14 : Linear State Space Equations (Denoted with A, B, C, and D matrices)
+    Eq. 13 & Eq. 14 : Linear State Space Equations (Denoted with [A], [B], [C], and [D] matrices)
     <br>
   <img
        width=531
