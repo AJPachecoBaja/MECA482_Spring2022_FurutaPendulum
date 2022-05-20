@@ -505,7 +505,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
        src="https://user-images.githubusercontent.com/104785921/169409579-b9a5ea7c-0d19-46f2-91c4-d1156d9823ed.png"
   >
     </p>
-
+<br>
 <p align="center">
     Scopes, Block Diagram:
     <br>
