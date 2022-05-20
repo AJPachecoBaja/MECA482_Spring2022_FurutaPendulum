@@ -62,7 +62,7 @@ Our team depicts the rotary pendulum in a freebody diagram.
 Figure 2. Free Body Diagram of Rotary Pendulum.
     </p>
 
-By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pendulum is controlled by two angles between the base-to-Rotary arm (Θ) and Rotary arm-to-Pendulum (α). The goal is to create script such that the two angles reach equilibrium and maintain a balanced pendulum in the upright position. Counterclockwise (CC) motion is depicted as a positve change in angle (Θ) for the system, with this sign convention, voltage was applied to the motor. This resulted in a positive voltage equaling a positive angle.
+By analyzing the figure above, the basic operation of the (<i>inverted</i>) Pendulum is controlled by two angles between the base-to-Rotary arm (Θ) and Rotary arm-to-Pendulum (α). The goal is to create script such that the two angles reach equilibrium and maintain a balanced pendulum in the upright position. Counterclockwise (CCW) motion is depicted as a positve change in angle (Θ) for the system, with this sign convention, voltage was applied to the motor. This resulted in a positive voltage equaling a positive angle.
 
 To begin this project the group created operational and functional viewpoint diagrams, this is a key step to control system theory. With these diagrams we are able to get a sense of the physical, mechanical, and electrical model as a project overview. The diagrams are shown below.
 
