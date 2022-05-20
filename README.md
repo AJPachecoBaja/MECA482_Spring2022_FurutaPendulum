@@ -534,7 +534,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     </p>
     
   <p align="center">
-    Theta (degrees) [Θ°], Output Graph:
+    Theta (degrees) [Θ], Output Graph:
     <br>
   <img
        width=748
@@ -544,7 +544,7 @@ With this mathmatical model of the angular aceleration, state space equations/ma
     </p>
     
   <p align="center">
-    Alpha (degrees) [α°] Output Graph:
+    Alpha (degrees) [α] Output Graph:
     <br>
   <img
        width=784
