@@ -116,11 +116,10 @@ To begin this project the group created operational and functional viewpoint dia
 | Motor back-EMF constant    | km = 0.03          |    (V.s)/rad      |
 | Motor armature resistance  | Rm =  2.6          |       (Ω)         |
 | Mass of Rotary Arm         |  Mr = 0.250        |      (kg)         |
-| Pendulum Viscious Friction coefficient    |  Dr = 1               |        ----               | 
-| Pendulum Viscous Damping coefficient      |   Dp = 1              |        ----               |
-| Distance from pivot to center of gravity  |   lp1 =               |       (m)                 |
+| Pendulum Viscious Friction coefficient    | Dr = 1                |        ----               | 
+| Pendulum Viscous Damping coefficient      | Dp = 1                |        ----               |
 | Gearbox Efficiency                        | eta_g =  0.85         |       (η)<sub>g</sub>     | 
-| Motor Efficiency                          |  eta_m =  0.87        |       (η)<sub>m</sub>     |
+| Motor Efficiency                          | eta_m =  0.87         |       (η)<sub>m</sub>     |
 | Rotation of the motor                     | tau_1 = 0             |       (τ)<sub>1</sub>     |
 | Rotation of the motor                     | tau_2 = 0             |      (τ)<sub>2</sub>      |
 | Arm Viscious Friction coefficient         | Br = 0                |      ----                 |
