@@ -20,7 +20,8 @@ Created by Sean Black, Laine Wood, and Andrew Pacheco
     - 3.1 Matlab
     - 3.2 Simulink
  - [4 Implementation](#4-Implementation)
- - [5 References](#5-References)
+ - [5 Video Presentation](#5-Video Presentation)
+ - [6 References](#6-References)
  
 -------------------------------------------------------------
 ## 1 Introduction
@@ -580,7 +581,15 @@ The Furuta Pendulum model seen below is made by connecting the Base, Arm, and Pe
 With a functioning simulation the project can be considered completed, although with the model that we have designed it would be possible to create a physical model of our system. The requirements for a functional physical model would include Sensor Calibration, manufacturing of parts (base, arm, and pendulumm), as well as selecting motors and servos to control the system
     
 --------------------------------------------------------------------------------
-## 5 References
+## 5 Video Presentation
+ <br>
+    
+   The raw mp4 file of our Project Video Presentation can be found [HERE](https://github.com/AJPachecoBaja/MECA482_Spring2022_FurutaPendulum/blob/main/SeanBlack_LaineWood_AndrewPacheco_MECA-482_Spring-2022.mp4) 
+
+    
+   
+--------------------------------------------------------------------------------
+## 6 References
     
 Quanser, Rotary Inverted Pendulum, Retrieved by Jan, 27, 2020 from
 https://www.quanser.com/products/rotary-inverted-pendulum/
